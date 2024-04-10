@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="first.css">
+</head>
+<body>
+  <div class="logo">
+    <img src="asset/logo2.png" alt="Dribbble Logo">
+  </div>
+  <div class="return return-btn">
+    <img src="asset/return.png" alt="return">
+  </div>
+  <div class="container">
+    <h1>Welcome! Let's create your profile</h1>
+    <p>Let others get to know you better! You can do these later</p>
+    <h2 style="margin-top: 40px;">Add an avatar</h2>
+        <div style="display: inline-flex; flex-direction: row; margin-top: 20px;">
+          <span class="circle" id="previewContainer">
+            <input type="file" id="fileInput" class="fileInput">
+            <div id="plusIcon">+</div>
+            <img id="previewImage" src="" style="max-width: 150%; max-height: 150%; border-radius: 50%;">
+        </span>
+            <div style=" margin-left: 40px; display: inline-flex; flex-direction: column;">
+        <button style="background-color: white; height: 30px; width: 120px; justify-content: center; align-items: center; font-size:small; border-color: rgb(216, 211, 211); border-radius: 5px;" id="button"><b>Choose image</b></button>
+        <p style=" color: rgb(159, 155, 155); font-weight: bold;">> Or choose one of our defaults</p>
+    </div>
+    </div>
+        <div class="location-container">
+        <h2 style="font-size:large;">Add your location</h2>
+        <input type="text" id="location-input" placeholder="Enter a location" />
+        <button id="next-btn" disabled>Next</button>
+        <p id="or-return" style="font-size: small;"><b>or Press RETURN</b></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="first.js"></script>
+</body>
+</html>

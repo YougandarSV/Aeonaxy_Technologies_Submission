@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up to Dribbble</title>
+  <link rel="stylesheet" href="signup.css">
+  
+</head>
+<body>
+
+  <div class="header">
+    <div class="signin-link">Already a member? <a href="#">Sign In</a></div>
+  </div>
+  <div class="container">
+    <div class="hero">
+      <img src="asset/logo.png">
+      <br>
+      <p class="hero-text"style="font-size: 1.85rem">Discover the world's top Designers & Creatives.</p>
+      <br><br>
+      <img src="asset/signup image.png"><br>
+      <p class="hero-author">Art by Yougandar &copy; <u>Peter Tarka</u></p>
+    </div>
+    <div class="signup-form">
+      <div class="signup-heading">
+      <h1>Sign up to Dribbble</h1>
+      <p id="username-taken-msg" style="display: none;"class="alert"><br>	&#8226; Username has already been taken</p>
+    </div>
+    <br><br><br><br>
+      <form id="signup-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name"><b>Name</b></label>
+            <input type="text" id="name" name="name" placeholder="eg. John" required>
+          </div>
+          <div class="form-group"style="margin-left: 1rem;" >
+            <label for="username"> <b>Username</b></label>
+            <input type="text" id="username" name="username" placeholder="eg. John" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email"><b>Email</b></label>
+          <input type="email" id="email" name="email" placeholder="eg. account@refero.design" required>
+        </div>
+        <div class="form-group">
+          <label for="password"><b>Password</b></label>
+          <input type="password" id="password" name="password" placeholder="6+ characters" required>
+        </div>
+        <div class="form-group terms">
+          <input type="checkbox" id="terms" name="terms" required>
+          <label for="terms">Creating an account means you're okay with our Terms of Service, Privacy Policy, and our default Notification <br> Settings.</label>
+        </div>
+        <button type="submit" class="btn">Create Account</button>
+      </form>
+      <p class="signin">This site is protected by reCAPTCHA and the Google<br><a>Privacy Policy</a> and <a>Term of Service</a> apply.</p>
+    </div>
+  </div>
+
+  <script src="signup.js"></script>
+</body>
+</html>

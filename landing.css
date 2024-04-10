@@ -1,0 +1,373 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-bottom:none;
+  }
+
+  .logo img {
+    max-height: 50px;
+  }
+  
+  .return {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.return-btn {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 170px; /* Adjust as needed */
+}
+
+.return-btn img {
+  width: 100%;
+  height: auto;
+}
+
+.return-btn:hover {
+  filter: brightness(0.6);
+}
+
+.return-btn:active {
+  transform: scale(0.95);
+}
+
+  .title {
+    font-size: 1.75rem;
+    transition: transform 0.3s ease;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    position: relative;
+    top :1.7cm;
+    left:2cm;
+    
+  }
+
+.title a {
+    font-size: medium;
+}
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    padding: 3rem;
+    flex-grow: 1;
+    margin-left: 150px; 
+  }
+  
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  
+  .option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1.5rem;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  .option:hover {
+    transform: translateY(-10px);
+    border-color: #ea4c89; 
+  }
+
+  .option.option1 {
+    width: 300px; 
+    height: 280px;
+    position: relative; 
+    left: 35px; 
+    top: 2.68cm;
+  }
+  
+  .option.option2 {
+    width: 300px;
+    height: 280px; 
+    position: relative; 
+    left: 200px;
+    top: -5.55cm;
+  }
+  
+  .option.option3 {
+    width: 300px; 
+    height: 280px;
+    position: relative; 
+    left: 570px;
+    top: -12.95cm; 
+  }
+  
+  .option.active {
+    border-color: #ea4c89;
+    opacity: 1;
+  }
+  
+ 
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .checkbox-container input[type="checkbox"] {
+    margin-right: 1rem;
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    border: 2px solid #ccc;
+    border-radius: 50%; 
+    cursor: pointer;
+    position: absolute;
+    top: 15rem;
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+  
+  .checkbox-container input[type="checkbox"]::after {
+    content: "";
+    position: absolute;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    align-items: center;
+  }
+  
+  .checkbox-container input[type="checkbox"]:checked {
+    border-color: #ea4c89;
+  }
+  
+  .checkbox-container input[type="checkbox"]:checked::after {
+    background-color: #ea4c89;
+  }
+  
+  .checkbox-container label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .content-wrapper {
+    transition: transform 0.3s ease;
+  }
+
+  .option.active .content-wrapper {
+    transform: translateY(-20px);
+  }
+  
+  .icon-container {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .icon-container img {
+    max-width: 70%;
+    height: auto;
+  }
+  
+  h3 {
+    margin-top: 1rem;
+    transition: transform 0.3s ease;
+  }
+
+  .option.active .icon-container{
+    transform: translateY(-55px);
+  }
+
+  .option.active h3{
+    transform: translateY(-55px);
+  }
+
+  .option-details {
+    display: none;
+    margin-top: 1rem;
+    font-size:85%;
+    color: rgba(104, 104, 104, 0.978);
+    transition: transform 0.3s ease;
+  }
+  
+  .option.active .option-details {
+    display: block;
+    transform: translateY(-55px); 
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer{
+    font-size: medium;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:-12.5cm;
+    left:5cm;
+  }
+
+  .footer1{
+    font-size: small;
+    color:rgba(104, 104, 104, 0.978);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:-10.2cm;
+    left:5cm;
+  }
+
+  .btn {
+    background-color: #ea4c89;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 0.5rem 4.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 0.5rem;
+    opacity: 0.6;
+    position: relative;
+    top:-380px;
+    left: 5cm;
+  }
+  
+  .btn:hover {
+    background-color: #d93a72;
+  }
+  
+  .btn.finish:not([disabled]) {
+    opacity: 1;
+  }
+  
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translatey(-250px); }
+  to { opacity: 1; transform: translatey(0); }
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease forwards;
+}
+
+.typewriter {
+  overflow: hidden; 
+  white-space: nowrap; 
+  animation: typewriter 3s steps(40) forwards;
+}
+
+
+
+@media (max-width: 767px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .return-btn {
+    left: auto;
+    top: auto;
+    transform: none;
+    position: static;
+    margin-bottom: 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    text-align: center;
+    position: static;
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+
+  .container {
+    padding: 1rem;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .options {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .option {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  .checkbox-container input[type="checkbox"] {
+    position: static;
+    margin-top: 1rem;
+    transform: none;
+  }
+
+  .btn {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+
+  .footer,
+  .footer1 {
+    position: static;
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+}
